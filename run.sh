@@ -1,1 +1,2 @@
-./main.py
+#!/bin/sh
+./python main.py

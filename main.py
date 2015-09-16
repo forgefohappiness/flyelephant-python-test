@@ -7,13 +7,14 @@ def fibonacci(n):
      return 1 
    return fibonacci(n-1)+fibonacci(n-2)
 
-file = open('result.dat','w')
+file = open('result.csv','w')
 
+file.write("Iteration,Value,Seconds\n")
 
-for i in range(30,40):
+for i in range(35):
    point1 = time()
    fib = fibonacci(i)
    point2 = time()
-   file.write(str(i)+"-i fib number tooks "+str(point2-point1)+" sec\n")
+   file.write(str(i)+","+str(fib)+","+str(point2-point1)+"\n")
 
 file.close()
