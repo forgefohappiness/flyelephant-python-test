@@ -11,7 +11,7 @@ file = open('result.csv','w')
 
 file.write("Iteration,Value,Seconds\n")
 
-for i in range(35):
+for i in range(40):
    point1 = time()
    fib = fibonacci(i)
    point2 = time()
